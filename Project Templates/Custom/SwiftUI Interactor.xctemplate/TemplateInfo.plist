@@ -22,6 +22,117 @@
 	<array>
 		<dict>
 			<key>Identifier</key>
+			<string>includeNetworkHelpers</string>
+			<key>Name</key>
+			<string>Include Networking helpers</string>
+			<key>Description</key>
+			<string>Includes networking helpers in the project.</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>false</string>
+			<key>SortOrder</key>
+			<integer>103</integer>
+			<key>Units</key>
+			<dict>
+				<key>true</key>
+				<dict>
+					<key>RequiredOptions</key>
+					<dict>
+						<key>userInterface</key>
+						<string>SwiftUI</string>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>Utilities/NetworkingHelpers.swift</string>
+						<string>Utilities/Loadable.swift</string>
+						<string>UI/Components/ErrorView.swift</string>
+						<string>UI/Components/LoadableView.swift</string>
+					</array>
+					<key>Definitions</key>
+					<dict>
+						<key>Utilities/NetworkingHelpers.swift</key>
+						<dict>
+							<key>Path</key>
+							<string>NetworkingHelpers.swift</string>
+							<key>Group</key>
+							<string>Utilities</string>
+						</dict>
+						<key>Utilities/Loadable.swift</key>
+						<dict>
+							<key>Path</key>
+							<string>Loadable.swift</string>
+							<key>Group</key>
+							<string>Utilities</string>
+						</dict>
+						<key>UI/Components/ErrorView.swift</key>
+						<dict>
+							<key>Path</key>
+							<string>ErrorView.swift</string>
+							<key>Group</key>
+							<array>
+								<string>UI</string>
+								<string>Components</string>
+							</array>
+						</dict>
+						<key>UI/Components/LoadableView.swift</key>
+						<dict>
+							<key>Path</key>
+							<string>LoadableView.swift</string>
+							<key>Group</key>
+							<array>
+								<string>UI</string>
+								<string>Components</string>
+							</array>
+						</dict>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>includeActivityIndicator</string>
+			<key>Name</key>
+			<string>Include Activity Indicator View</string>
+			<key>Description</key>
+			<string>Includes an activity indicator view in the project.</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>true</string>
+			<key>SortOrder</key>
+			<integer>102</integer>
+			<key>Units</key>
+			<dict>
+				<key>true</key>
+				<dict>
+					<key>RequiredOptions</key>
+					<dict>
+						<key>userInterface</key>
+						<string>SwiftUI</string>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>UI/Components/ActivityIndicatorView.swift</string>
+					</array>
+					<key>Definitions</key>
+					<dict>
+						<key>UI/Components/ActivityIndicatorView.swift</key>
+						<dict>
+							<key>Path</key>
+							<string>ActivityIndicatorView.swift</string>
+							<key>Group</key>
+							<array>
+								<string>UI</string>
+								<string>Components</string>
+							</array>
+						</dict>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
 			<string>languageChoice</string>
 			<key>Units</key>
 			<dict>
@@ -53,8 +164,6 @@
 						<dict>
 							<key>Application/AppDelegate.swift</key>
 							<dict>
-								<key>SortOrder</key>
-								<integer>100</integer>
 								<key>Path</key>
 								<string>AppDelegate.swift</string>
 								<key>Group</key>
@@ -62,8 +171,6 @@
 							</dict>
 							<key>Application/SceneDelegate.swift</key>
 							<dict>
-								<key>SortOrder</key>
-								<integer>101</integer>
 								<key>Path</key>
 								<string>SceneDelegate.swift</string>
 								<key>Group</key>
@@ -71,8 +178,6 @@
 							</dict>
 							<key>Application/AppEnvironment.swift</key>
 							<dict>
-								<key>SortOrder</key>
-								<integer>102</integer>
 								<key>Path</key>
 								<string>AppEnvironment.swift</string>
 								<key>Group</key>
@@ -80,8 +185,6 @@
 							</dict>
 							<key>Application/SystemEventsHandler.swift</key>
 							<dict>
-								<key>SortOrder</key>
-								<string>103</string>
 								<key>Path</key>
 								<string>SystemEventsHandler.swift</string>
 								<key>Group</key>
@@ -89,8 +192,6 @@
 							</dict>
 							<key>Injected/AppState.swift</key>
 							<dict>
-								<key>SortOrder</key>
-								<integer>104</integer>
 								<key>Path</key>
 								<string>AppState.swift</string>
 								<key>Group</key>
@@ -100,8 +201,6 @@
 							</dict>
 							<key>Injected/DependencyInjector.swift</key>
 							<dict>
-								<key>SortOrder</key>
-								<integer>105</integer>
 								<key>Path</key>
 								<string>DependencyInjector.swift</string>
 								<key>Group</key>
@@ -111,8 +210,6 @@
 							</dict>
 							<key>Injected/InteractorsContainer.swift</key>
 							<dict>
-								<key>SortOrder</key>
-								<integer>106</integer>
 								<key>Path</key>
 								<string>InteractorsContainer.swift</string>
 								<key>Group</key>
@@ -120,8 +217,6 @@
 							</dict>
 							<key>Interactors/Interactor.swift</key>
 							<dict>
-								<key>SortOrder</key>
-								<integer>107</integer>
 								<key>Path</key>
 								<string>Interactor.swift</string>
 								<key>Group</key>
@@ -129,8 +224,6 @@
 							</dict>
 							<key>UI/ViewModifiers/RootViewAppearance.swift</key>
 							<dict>
-								<key>SortOrder</key>
-								<integer>108</integer>
 								<key>Path</key>
 								<string>RootViewAppearance.swift</string>
 								<key>Group</key>
@@ -141,8 +234,6 @@
 							</dict>
 							<key>UI/Screens/ContentView.swift</key>
 							<dict>
-								<key>SortOrder</key>
-								<integer>109</integer>
 								<key>Path</key>
 								<string>ContentView.swift</string>
 								<key>Group</key>
@@ -153,8 +244,6 @@
 							</dict>
 							<key>Utilities/Store.swift</key>
 							<dict>
-								<key>SortOrder</key>
-								<integer>110</integer>
 								<key>Path</key>
 								<string>Store.swift</string>
 								<key>Group</key>
@@ -162,8 +251,6 @@
 							</dict>
 							<key>Utilities/CancelBag.swift</key>
 							<dict>
-								<key>SortOrder</key>
-								<integer>111</integer>
 								<key>Path</key>
 								<string>CancelBag.swift</string>
 								<key>Group</key>
@@ -171,8 +258,6 @@
 							</dict>
 							<key>Resources/Preview Content/Preview Assets.xcassets</key>
 							<dict>
-								<key>SortOrder</key>
-								<integer>112</integer>
 								<key>Path</key>
 								<string>Preview Assets.xcassets</string>
 								<key>Group</key>
